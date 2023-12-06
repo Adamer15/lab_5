@@ -7,8 +7,8 @@ int main()
     string s;
 
     cout << "Podaj napis: ";
-    getline(cin, s);
-    lowercase(s);
+    getline(cin, s); // wczytywanie calej linijki
+//    lowercase(s);
     begin_with_upper(s);
     cout << s << endl;
 

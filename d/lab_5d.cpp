@@ -11,6 +11,7 @@ string lowercase(string &s)
 
 string begin_with_upper(string &s)
 {
+    lowercase(s);
     s[0] = toupper(s[0]);
     for (int i = 0; i < s.length() - 1; i++)
     {
