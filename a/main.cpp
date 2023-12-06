@@ -7,6 +7,7 @@ using namespace std;
 string s;
 int main ()
 {
+    cout << "Podaj napis: ";
     cin >> s;
     cout << is_lowercase(s);
     return 0;

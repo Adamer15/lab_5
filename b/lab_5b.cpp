@@ -18,3 +18,23 @@ void wypisz(int t[])
         if (t[i] > 0)
             std::cout << (char)i << " " << t[i] << std::endl;
 }
+int ile_cyfr(string &s)
+{
+    int licznik = 0;
+    for (char c : s)
+    {
+        if ((c <= 57) && (c >= 48))
+            licznik++;
+    }
+    return licznik;
+}
+int ile_liter(string &s)
+{
+    int licznik = 0;
+    for (char c : s)
+    {
+        if ((c <= 122) && (c >= 65))
+            licznik++;
+    }
+    return licznik;
+}

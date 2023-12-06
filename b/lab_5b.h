@@ -8,4 +8,6 @@
 #include<string>
 void zliczanie(std::string &s, int t[]);
 void wypisz(int t[]);
+int ile_cyfr(std::string &s);
+int ile_liter(std::string &s);
 #endif

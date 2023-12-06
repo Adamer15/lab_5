@@ -1,25 +1,32 @@
-//
-// Created by Adam Raczkowski on 03/12/2023.
-//
-
 #include "lab_5c.h"
-#include<iostream>
+bool lowercase (char &c)
+{
+    if (c >= 97 && c <= 122)
+        return true;
+    return false;
+}
 std::string szyfrowanie(std::string &s)
 {
     std::string wynik = s;
 
     for (char &c : wynik)
     {
-        if (std::isalpha(c))
+        if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
         {
             // Sprawdzenie, czy litera jest mała czy duża
-            if (std::islower(c))
+            if (lowercase(c))
             {
-                c = (c - 'a' + 1) % 26 + 'a';
+                if (c == 122)
+                    c = 65;
+                else
+                    c = (c - 'a' + 1) % 26 + 'a';
             }
             else
             {
-                c = (c - 'A' + 1) % 26 + 'A';
+                if (c == 90)
+                    c = 97;
+                else
+                    c = (c - 'A' + 1) % 26 + 'A';
             }
         }
     }

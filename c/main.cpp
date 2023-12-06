@@ -1,6 +1,3 @@
-//
-// Created by Adam Raczkowski on 03/12/2023.
-//
 #include<iostream>
 #include "lab_5c.h"
 using namespace std;

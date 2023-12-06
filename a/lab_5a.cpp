@@ -9,7 +9,7 @@ bool is_lowercase(string &s)
 {
     for (char c : s)
     {
-        if (!islower(c))
+        if (c >= 97)
             return false;
     }
     return true;

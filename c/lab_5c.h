@@ -7,5 +7,6 @@
 #include<string>
 
 std::string szyfrowanie(std::string &s);
+bool lowercase(char &c);
 
 #endif //SOURCES_MIX_LAB_5C_H
